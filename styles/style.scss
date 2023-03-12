@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Variables
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+$blue: hsl(248, 32%, 49%);
+$dark: hsl(249, 10%, 26%);
+$grey: hsl(246, 25%, 77%);
+
+html,
+body {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+html {
+  background: url(../images/bg-intro-desktop.png), $red;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 100px;
+  gap: 50px;
+  height: 90vh;
+}
+
+.text-container {
+  max-width: 50%;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  justify-content: center;
+  align-items: center;
+
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    padding: 40px;
+    gap: 30px;
+    box-shadow: 0 5px rgba(128, 128, 128, 0.4);
+
+    input {
+      height: 50px;
+      border-radius: 5px;
+      border: 1px solid $grey;
+      padding-left: 10px;
+      color: $dark;
+    }
+
+    button {
+      height: 50px;
+      background-color: $green;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Poppins', sans-serif;
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: 600;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px hsla(154, 57%, 36%, 0.74);
+    }
+
+    button:active,
+    button:hover {
+      background-color: hsl(154, 72%, 53%);
+    }
+
+    p {
+      color: $grey;
+      margin-top: -15px;
+      font-size: .8rem;
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: $red;
+    }
+  }
+  
+  .try-it {
+    padding: 15px;
+    background-color: $blue;
+    border-radius: 5px;
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 5px rgba(128, 128, 128, 0.4);
+
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+input::placeholder {
+  color: $grey;
+}
+
+@media screen and (max-width: 950px) {
+  
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 40px 30px;
+    height: fit-content;
+  }
+
+  .text-container {
+    max-width: fit-content;
+    text-align: center;
+    padding-right: 0;
+    
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    
+  }
+
+  .form-container {
+    max-width: fit-content;
+  }
+  
+}

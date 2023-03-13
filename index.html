@@ -22,24 +22,28 @@
         <div class="try-it">
           <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
         </div>
-        <div class="form">
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-          <input type="text" placeholder="Email Adress" />
-          <input type="password" placeholder="Password" />
+        <form class="form" id="form">
+          <input type="text" name="name" placeholder="First Name" id="name" />
+          <img id="img-name" src="./images/icon-error.svg" />
+          <p id="error-name" class="error-message unactive">Insert a valid name</p>
+          <input type="text" name="lastname" placeholder="Last Name" id="lastname" />
+          <img id="img-lastname" src="./images/icon-error.svg" />
+          <p id="error-lastname" class="error-message unactive">Insert a valid last name</p>
+          <input type="text" name="email" placeholder="Email Adress" id="email" />
+          <img id="img-email" src="./images/icon-error.svg" />
+          <p id="error-email" class="error-message unactive">Insert a valid email</p>
+          <input type="password" name="password" placeholder="Password" id="password" />
+          <img id="img-password" src="./images/icon-error.svg" />
+          <p id="error-password" class="error-message unactive">Insert a valid password (4 to 12 characters)</p>
           <button type="submit">Claim your free trial</button>
           <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
-        </div>
+        </form>
       </div>
     </div>
   </main>
 
-  <!-- 
+  <script type="text/javascript" src="./index.js"></script>
 
-  
-
-  
-   -->
   <!-- <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

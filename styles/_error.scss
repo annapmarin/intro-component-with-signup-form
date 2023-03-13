@@ -1,0 +1,61 @@
+.error {
+  border: 2px solid hsl(0, 100%, 40.8%) !important;
+  }
+
+#img-name {
+  display: none;
+  position: absolute;
+  margin-left: 385px;
+  margin-top: 12px;
+}
+
+#img-lastname {
+  display: none;
+  position: absolute;
+  margin-left: 385px;
+  margin-top: 92px;
+}
+
+#img-email {
+  display: none;
+  position: absolute;
+  margin-left: 385px;
+  margin-top: 172px;
+}
+
+#img-password {
+  display: none;
+  position: absolute;
+  margin-left: 385px;
+  margin-top: 252px
+}
+
+.error-message {
+  color: hsl(0, 100%, 74%) !important;
+  text-align: right !important;
+  position: absolute;
+}
+
+.unactive {
+  display: none;
+}
+
+#error-name {
+  margin-left: 294px;
+  margin-top: 52px !important;
+}
+
+#error-lastname {
+  margin-left: 268px;
+  margin-top: 132px !important;
+}
+
+#error-email {
+  margin-left: 296px;
+  margin-top: 212px !important;
+}
+
+#error-password {
+  margin-left: 147px;
+  margin-top: 292px !important;
+}

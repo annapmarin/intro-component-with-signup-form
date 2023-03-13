@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import 'error';
 
 * {
   margin: 0;
@@ -36,6 +37,7 @@ p {
 .container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin: 20px 100px;
   gap: 50px;
   height: 90vh;
@@ -53,6 +55,7 @@ p {
   display: flex;
   flex-direction: column;
   max-width: 50%;
+  min-width: 500px;
   justify-content: center;
   align-items: center;
 
@@ -136,7 +139,7 @@ input::placeholder {
   }
 
   .text-container {
-    max-width: fit-content;
+    max-width: 375px;
     text-align: center;
     padding-right: 0;
     
@@ -148,7 +151,40 @@ input::placeholder {
   }
 
   .form-container {
-    max-width: fit-content;
+    max-width: 375px;
+    min-width: 375px;
+
+    #img-name {
+      margin-left: 257px;
+    }
+
+    #img-lastname {
+      margin-left: 259px;
+    }
+
+    #img-email {
+      margin-left: 260px;
+    }
+
+    #img-password {
+      margin-left: 260px;
+    }
+  }
+
+  #error-name {
+    margin-left: 171px;
+  }
+
+  #error-lastname {
+    margin-left: 145px;
+  }
+
+  #error-email {
+    margin-left: 172px;
+  }
+
+  #error-password {
+    margin-left: 24px;
   }
   
 }

@@ -1,4 +1,66 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+.error {
+  border: 2px solid hsl(0, 100%, 40.8%) !important;
+}
+
+#img-name {
+  display: none;
+  position: absolute;
+  margin-left: 385px;
+  margin-top: 12px;
+}
+
+#img-lastname {
+  display: none;
+  position: absolute;
+  margin-left: 385px;
+  margin-top: 92px;
+}
+
+#img-email {
+  display: none;
+  position: absolute;
+  margin-left: 385px;
+  margin-top: 172px;
+}
+
+#img-password {
+  display: none;
+  position: absolute;
+  margin-left: 385px;
+  margin-top: 252px;
+}
+
+.error-message {
+  color: hsl(0, 100%, 74%) !important;
+  text-align: right !important;
+  position: absolute;
+}
+
+.unactive {
+  display: none;
+}
+
+#error-name {
+  margin-left: 294px;
+  margin-top: 52px !important;
+}
+
+#error-lastname {
+  margin-left: 268px;
+  margin-top: 132px !important;
+}
+
+#error-email {
+  margin-left: 296px;
+  margin-top: 212px !important;
+}
+
+#error-password {
+  margin-left: 147px;
+  margin-top: 292px !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -28,6 +90,7 @@ p {
 .container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin: 20px 100px;
   gap: 50px;
   height: 90vh;
@@ -45,6 +108,7 @@ p {
   display: flex;
   flex-direction: column;
   max-width: 50%;
+  min-width: 500px;
   justify-content: center;
   align-items: center;
 }
@@ -123,8 +187,7 @@ input::placeholder {
     height: fit-content;
   }
   .text-container {
-    max-width: -moz-fit-content;
-    max-width: fit-content;
+    max-width: 375px;
     text-align: center;
     padding-right: 0;
   }
@@ -132,7 +195,31 @@ input::placeholder {
     font-size: 2.2rem;
   }
   .form-container {
-    max-width: -moz-fit-content;
-    max-width: fit-content;
+    max-width: 375px;
+    min-width: 375px;
+  }
+  .form-container #img-name {
+    margin-left: 257px;
+  }
+  .form-container #img-lastname {
+    margin-left: 259px;
+  }
+  .form-container #img-email {
+    margin-left: 260px;
+  }
+  .form-container #img-password {
+    margin-left: 260px;
+  }
+  #error-name {
+    margin-left: 171px;
+  }
+  #error-lastname {
+    margin-left: 145px;
+  }
+  #error-email {
+    margin-left: 172px;
+  }
+  #error-password {
+    margin-left: 24px;
   }
 }/*# sourceMappingURL=style.css.map */
